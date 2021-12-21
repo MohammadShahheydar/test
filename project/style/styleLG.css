@@ -1,0 +1,223 @@
+@media (min-width: 768px) {
+
+    /*menu css*/
+    section.menu {
+        width: 100%;
+        height: 50px;
+        background-color: lightgrey;
+        transition: all 300ms linear;
+    }
+
+    section.menu > nav:nth-of-type(1) {
+        width: inherit;
+        height: inherit;
+        display: block;
+    }
+
+    section.menu > section:nth-of-type(1) {
+        display: none;
+    }
+
+    section.menu > nav > ul {
+        width: 60%;
+        height: inherit;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    section.menu > nav > ul > li {
+        height: inherit;
+        line-height: 50px;
+        display: inline-block;
+        width: 20%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    section.menu > nav > ul > li:nth-of-type(1) {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    section.menu > nav > ul > li > a {
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        color: #111111;
+        transition: all 300ms linear;
+    }
+
+    section.menu > nav > ul > li > a:hover {
+        background-color: deeppink;
+        color: whitesmoke;
+    }
+
+    /*end menu css*/
+    /*slider css*/
+    section.slider {
+        width: 100%;
+        height: 500px;
+        background: url('../../image/9617e96d-0fcf-04c7-e46c-556f3ceb579d.jpg') no-repeat fixed center center;
+        background-size: cover;
+        /*flex way 👇🏻*/
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+
+        /*position way 👇🏻 (in children slogan)*/
+        position: relative;
+        direction: ltr;
+
+    }
+
+    section.slider > section.slogan {
+        /*position: absolute way 👇🏻*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 50%;
+        margin: 0px auto;
+        text-algin: center;
+        background-color: rgba(0, 0, 0, .7);
+        backdrop-filter: blur(12px);
+        color: whitesmoke;
+        padding: 8px;
+        border-radius: 8px;
+        direction: rtl;
+        box-shadow: 5px 5px 4px black;
+    }
+
+    section.slider > section.slogan > p, h2 {
+        text-align: center;
+        postion: relative;
+    }
+
+    section.slider > section.loading {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 7px;
+        borer-radius: 5px;
+        background-color: #777cf3;
+    }
+
+    /*end slider css*/
+    /*news css*/
+    section.news {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 70px 0px;
+        box-sizing: border-box;
+        background: url(../../image/background.jpg) no-repeat fixed center center;
+        background-size: cover;
+        /*filter: grayscale(100%);*/
+    }
+
+    section.news > section.newsItems {
+        padding: 20px;
+        margin: 0 30px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        background-color: rgba(211, 211, 211, .3);
+        backdrop-filter: blur(10px);
+        color: whitesmoke;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    section.news > section.newsItems > h1, p {
+        margin: 30px 0;
+    }
+
+    section.news > section.newsItems > a {
+        display: inline-block;
+        text-decoration: none;
+        color: limegreen;
+        transition: all 300ms linear;
+    }
+
+    section.news > section.newsItems > a:hover {
+        color: #1ca9cd;
+        display: inline-block;
+        transform: scale(1.2, 1.2);
+    }
+
+    /*end news css*/
+    /*    make about css*/
+    section.about {
+        width: 100%;
+        background: url("../../image/about.jpg") no-repeat center center;
+        background-size: cover;
+        display: flex;
+        display-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        box-sizing: border-box;
+        color: whitesmoke;
+    }
+
+    section.about > section.description {
+        width: 30%;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        background-color: rgba(162, 157, 157, 0.5);
+        backdrop-filter: blur(20px);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    /*    end make about css*/
+    /*    make footer css*/
+    section.footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-contet: center;
+        background: url(../../image/background.jpg) no-repeat fixed center center;
+        background-size: cover;
+        padding: 15px;
+        box-sizing: border-box;
+        height: 400px;
+    }
+
+    section.footer > section.contact {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: blue;
+        height: 200px;
+    }
+
+    section.social {
+        flex-grow: 2;
+        background-color: red;
+        padding: 15px;
+        box-sizing: border-box;
+        height: 50px;
+    }
+
+    section.address {
+        flex-grow: 4;
+        background-color: yellow;
+        padding: 15px;
+        box-sizing: border-box;
+        height: 50px;
+    }
+
+    section.phone {
+        flex-grow: 2;
+        background-color: purple;
+        padding: 15px;
+        box-sizing: border-box;
+        height: 50px;
+    }
+    /*    end make footer css*/
+}
